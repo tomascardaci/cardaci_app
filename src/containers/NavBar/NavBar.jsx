@@ -16,7 +16,7 @@ const NavBar = () => {
           <Link className='Brand' to='/'>BRAND</Link>
           <Nav className="me-auto">
             <Link className='Link' to='/'>Inicio</Link>
-            <Link className='Link' to='/categoria/escritorios'>Escritorios</Link>
+            <Link className='Link' to='/categoria/mesas'>Mesas</Link>
             <Link className='Link' to='/categoria/vestidores'>Vestidores</Link>
             <Link className='Link' to='/cart'><CartWidget/></Link>
           </Nav>
