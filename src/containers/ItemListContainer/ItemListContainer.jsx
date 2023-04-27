@@ -20,7 +20,7 @@ const ItemListContainer = () => {
 
     if(cid) {
       mockFetch()
-      .then(resp => setProductos(resp.filter(prod=>prod.categoria === cid)))
+      .then(resp => setProductos(resp.filter(prod=>prod.categoria == cid)))
       .catch((err)=> console.log(err))
       .finally(() => console.log("completo"))
 
@@ -36,18 +36,8 @@ const ItemListContainer = () => {
 
 
   console.log(productos)
-  return (
-    <>
-            
-            <ItemList productos = {productos}/>
-
-        
-
-
-            
-    </>
-
-    
+  return (        
+            <ItemList productos = {productos}/>            
 
   )
 }

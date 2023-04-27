@@ -1,8 +1,8 @@
 
 let productos = [
-    { id: "1", name: "Mesa de paraíso", description: "Mesa de paraíso lustrada", stock: 10, image: 'https://i.ibb.co/9nrfFq9/mesa.jpg',categoria: 'mesa' },
-    { id: "2", name: "Mesita de luz", description: "Mesa de luz color claro", stock: 10, image: 'https://i.ibb.co/F0ZkHXZ/mesita.jpg', categoria: 'mesa' },
-    { id: "3", name: "Placard", description: "Vestidor color claro", stock: 10, image: 'https://i.ibb.co/7bhvsm1/placard.jpg', categoria: 'vestidor' },
+    { id: "1", name: "Mesa de paraíso", description: "Mesa de paraíso lustrada", stock: 10, image: 'https://i.ibb.co/9nrfFq9/mesa.jpg',categoria: 'mesas' },
+    { id: "2", name: "Mesita de luz", description: "Mesa de luz color claro", stock: 10, image: 'https://i.ibb.co/F0ZkHXZ/mesita.jpg', categoria: 'mesas' },
+    { id: "3", name: "Placard", description: "Vestidor color claro", stock: 10, image: 'https://i.ibb.co/7bhvsm1/placard.jpg', categoria: 'vestidores' },
     { id: "4", name: "Mueble televisión", description: "Mueble para television 160cm", stock: 10, image: 'https://i.ibb.co/6mDG3zX/tele.jpg', categoria: 'tv' },
     { id: "5", name: "Estantería", description: "Estanteria para zapatos color blanco", stock: 10, image: 'https://i.ibb.co/DVNJYHf/zapaaaatoss.png',categoria: 'estante' },     
 ];
