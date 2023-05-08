@@ -1,9 +1,9 @@
 .ItemListBody{
-    padding: 50px 20px;
+    padding: 50px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
 
 }

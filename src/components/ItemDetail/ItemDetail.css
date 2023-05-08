@@ -1,3 +1,41 @@
+
+.ItemDetailBodyContainer{
+    display: flex;
+    flex-flow: row;
+}
+
 .ItemDetailBody{
-    max-width: 30rem;
+    background-color: #DAFDBA;
+    max-width: 380px;
+    height: 620px;    
+}
+
+
+
+.CardTitle{
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.CardDescription{
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+
+.ItemDetailControls{
+    background-color: #45C4B0;
+    border-left: 1px solid black ;
+    width: 420px;
+}
+
+.DetailControlsBody{
+    display: flex;
+    height: 100%;
+    flex-direction: column-reverse;
 }

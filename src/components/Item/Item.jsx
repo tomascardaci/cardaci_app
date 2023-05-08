@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 import WebFont from 'webfontloader';
 
-import { Button } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 
 import './Item.css'
@@ -20,13 +19,17 @@ const Item = ({product}) => {
   })
 
   return (
-      <Card className='ItemBodyContainer'>
-          <Card.Img src={product.img} />
-              <Card.Body className='RobotoFont'>
-                  <Card.Title><p className='ItemTitle'>{product.name}</p></Card.Title>
-                  <Link to={ `/detail/${product.id}`}><Button size='md' className='ItemButton' >Detalles</Button></Link>
-        </Card.Body>
-      </Card>
+      <Link className='ItemLink' to={`/detail/${product.id}`}>
+            <Card className='ItemBodyContainer shadow-md'>
+          <div className="Color">
+              <Card.Img alt='imagen'  src={product.img} />
+              <Card.Body>
+                <Card.Title><p className='ItemTitle'>{product.name}</p></Card.Title>
+                <Card.Subtitle><p className="ItemSubtitle">$ {product.price}</p></Card.Subtitle>
+              </Card.Body>
+          </div>
+            </Card>
+      </Link>
   )
 }
 
