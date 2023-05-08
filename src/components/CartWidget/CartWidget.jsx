@@ -1,12 +1,13 @@
 import React from 'react';
-import './CartWidget.css'
 import { HiShoppingCart } from 'react-icons/hi';
+
+import './CartWidget.css'
 
 
 const CartWidget = () => {
     return (
         <div>
-            <HiShoppingCart size={30}/> 5
+            <HiShoppingCart className='CartWidget' size={35}/>
         </div>
         
     )

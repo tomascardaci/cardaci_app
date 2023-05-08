@@ -1,5 +1,3 @@
-.itemDetailBody{
-    margin: 30px;
-    width: 30rem;
+.ItemDetailBody{
+    max-width: 30rem;
 }
-

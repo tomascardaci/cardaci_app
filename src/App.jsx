@@ -1,29 +1,28 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
-import NavBar from './containers/NavBar/NavBar';
-import ItemDetailContainer from './containers/ItemDetailContainer/ItemDetailContainer';
-import ItemListContainer from './containers/ItemListContainer/ItemListContainer';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+import NavBar from './components/NavBar/NavBar';
+import ItemListContainer from './components/containers/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './components/containers/ItemDetailContainer/ItemDetailContainer';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import './App.css';
-
-
 
 function App() {
 
   return (
     <BrowserRouter>
+        <div className='App'>
+            <NavBar/>
 
-      <div className="App">
-        <NavBar/>
-        <Routes>
-          <Route path='/' element={<ItemListContainer greeting="Saludos"/>}/>
-          <Route path='/categoria/:cid' element={<ItemListContainer greeting="Saludos"/>}/>
-          <Route path='/detail/:pid' element={<ItemDetailContainer/>}/>  
-          <Route path='*' element={<Navigate to='/'/>}/>
-        </Routes>
-      </div>
+            <Routes>
+              <Route path='/' element={<ItemListContainer/>}/>
+              <Route path='/category/:cid' element={<ItemListContainer/>}/>
+              <Route path='/detail/:pid' element={<ItemDetailContainer/>}/>    
+            </Routes>
 
+        </div>
     </BrowserRouter>
   ); 
 }

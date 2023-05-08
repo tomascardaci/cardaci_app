@@ -1,0 +1,38 @@
+.NavBar{
+    background-color: #012030;
+    height: 100px;
+    /* border: 1px solid yellow; */
+    
+}
+
+.NavBarBody{
+    /* border: 1px solid green; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.NavBarLinkContainer{
+    /* border: 1px solid pink; */
+    display: flex;
+    flex-direction: row;
+}
+
+.NavBarLink{
+    /* border: 1px solid red; */
+    
+    text-decoration: none;
+    outline: none;
+    margin: 10px 10px 0px;
+
+    color: white;
+    font-family: Roboto;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.NavBarLink:hover{
+    color: #45C4B0; 
+}

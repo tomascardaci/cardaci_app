@@ -1,0 +1,7 @@
+.CartWidget{
+    color: white;
+}
+
+.CartWidget:hover{
+    color: #45C4B0; 
+}

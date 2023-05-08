@@ -1,5 +1,23 @@
-.itemBody{
-    margin: 10px;
-    width: 20rem;
+.RobotoFont{
+    font-family: Roboto;    
+    background-color: #e4f0d9; 
 }
 
+.ItemBodyContainer{
+    max-width: 320px;    
+}
+
+.ItemTitle{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.ItemDescription{
+    font-size: 16px;
+    max-height: 70px;
+    overflow: hidden;
+}
+
+.ItemButton{
+    background-color: #45C4B0 ;
+}

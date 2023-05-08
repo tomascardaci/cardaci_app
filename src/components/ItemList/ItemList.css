@@ -1,9 +1,9 @@
-.itemListBody{
-    margin-top: 80px;
+.ItemListBody{
+    padding: 50px 20px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
 }
