@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 export const useCount = (initial = 1, max = 5, min = 1) => {
 

@@ -1,26 +1,26 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 import { Card } from 'react-bootstrap'
 
 import './ItemDetail.css'
-import AddItemButton from '../AddItemButton/AddItemButton'
 import ItemCount from '../ItemCount/ItemCount'
 import { useCartContext } from '../../context/CartContext'
 
 const ItemDetail = ({product}) => {
 
-  const [haveQuantity, setHaveQuantity] = useState(false)
+  // const [haveQuantity, setHaveQuantity] = useState(false)
 
   const { addToCart } = useCartContext()
 
   const onAdd = (cantidad) => {
     addToCart({...product, quantity: cantidad})
-    setHaveQuantity(true)
+    // setHaveQuantity(true)
   }
+
+  
 
 
   return (
-        <Card>
-          <div className="ItemDetailBodyContainer">    
+        <Card> 
 
             <div className='ItemDetailBody'>
 
@@ -30,19 +30,9 @@ const ItemDetail = ({product}) => {
                 <Card.Title><p className="CardTitle">{product.name}</p></Card.Title>
                 <Card.Text><p className="CardDescription">{product.description}</p></Card.Text>
               </Card.Body>
+              <ItemCount stock={product.stock} onAdd={onAdd}/>
 
             </div>
-
-            <div className='ItemDetailControls'>
-
-              <Card.Body className='DetailControlsBody'>
-                <AddItemButton/>
-                <ItemCount stock={product.stock}/>
-              </Card.Body>
-
-            </div>
-
-          </div>
         
         </Card>
   )

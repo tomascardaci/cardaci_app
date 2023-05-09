@@ -8,22 +8,23 @@ import ItemDetailContainer from './components/containers/ItemDetailContainer/Ite
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
+import { CartContextProvider } from './context/CartContext';
 
 function App() {
 
   return (
-    <BrowserRouter>
-        <div className='App'>
-            <NavBar/>
-
-            <Routes>
-              <Route path='/' element={<ItemListContainer/>}/>
-              <Route path='/category/:cid' element={<ItemListContainer/>}/>
-              <Route path='/detail/:pid' element={<ItemDetailContainer/>}/>    
-            </Routes>
-
-        </div>
-    </BrowserRouter>
+    <CartContextProvider>
+      <BrowserRouter>
+          <div className='App'>
+              <NavBar/>
+              <Routes>
+                <Route path='/' element={<ItemListContainer/>}/>
+                <Route path='/category/:cid' element={<ItemListContainer/>}/>
+                <Route path='/detail/:pid' element={<ItemDetailContainer/>}/>
+              </Routes>
+          </div>
+      </BrowserRouter>
+    </CartContextProvider>
   ); 
 }
 

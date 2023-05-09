@@ -1,3 +1,11 @@
+.ItemCountContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
 .ItemCount{
     display: flex;
     flex-direction: row;
@@ -6,11 +14,10 @@
 }
 
 .ItemCountButton{
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
     background-color: #13678A;
     border: none;
-    margin: 20px;
 
     color: white;
     font-family: Roboto;
@@ -20,9 +27,20 @@
 }
 
 .ItemCountQuantity{
-    color: white;
+    color: #13678A;
     font-family: Roboto;
     font-size: 30px;
     font-weight: bold;
     margin: 10px;
+}
+
+.AddItemButton{
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: #13678A;
+    color: white;
+    border: none;
+    padding: 10px 50px;
 }

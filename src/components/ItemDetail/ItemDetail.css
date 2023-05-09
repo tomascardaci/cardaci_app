@@ -1,13 +1,7 @@
 
-.ItemDetailBodyContainer{
-    display: flex;
-    flex-flow: row;
-}
-
 .ItemDetailBody{
     background-color: #DAFDBA;
-    max-width: 380px;
-    height: 620px;    
+    max-width: 380px;    
 }
 
 
@@ -21,9 +15,7 @@
 
 .CardDescription{
     font-family: Roboto;
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 1px;
+    font-size: 20px;
 }
 
 

@@ -5,26 +5,27 @@
 .ItemTitle{
     margin-top: 10px;
     font-family: Roboto;
-    font-size: 26px;
+    font-size: 21px;
     font-weight: 600;
     letter-spacing: 1px;
-    color: #012030;
+    color: #ffffff;
 }
 
 .ItemSubtitle{
     font-family: Roboto;
-    font-size: 24px;
-    color: #157e00;
+    font-size: 22px;
+    color: #44b82d;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
 .ItemBodyContainer{ 
     max-width: 320px;
+    height: 480px;
     margin: 25px;
 }
 
 .Color{
-    background-color: #cef8a6;
+    background-color: #02344d;
 
 }

@@ -17,7 +17,7 @@ export const CartContextProvider = ({children}) => {
 
     const addToCart = (newProduct) =>{
 
-        const iProduct = cartList.findIndex(prod = prod.id === newProduct.id)
+        const iProduct = cartList.findIndex(prod => prod.id === newProduct.id)
 
         if (iProduct === -1) {
             setCartList([...cartList,newProduct])

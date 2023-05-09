@@ -1,5 +1,5 @@
 let products = [
-    {id: '0', name:'Fender Stratocaster', stock:'4', price:'251.140', img:'https://picsum.photos/500', category:'guitarras', description:'Su madera de aliso tiene una densidad media y proporciona un sonido equilibrado, rico en armónicos, con agudos y graves suaves'},
+    {id: '0', name:'Fender Stratocaster', stock:'4', price:'251.140', img:'https://firebasestorage.googleapis.com/v0/b/fusa-fa981.appspot.com/o/products-img%2Fguitarra-stratocaster.webp?alt=media&token=caa6699e-0af3-417a-a826-5b99433895e9', category:'guitarras', description:'Su madera de aliso tiene una densidad media y proporciona un sonido equilibrado, rico en armónicos, con agudos y graves suaves'},
     {id: '1', name:'Fender Jaguar', stock:'3', price:'price', img:'https://picsum.photos/501', category:'guitarras', description:'description'}, 
     {id: '2', name:'Guitarra Acustica', stock:'2', price:'price', img:'https://picsum.photos/502', category:'guitarras', description:'description'}, 
     {id: '3', name:'Bajo', stock:'3', price:'price', img:'https://picsum.photos/503', category:'bajos', description:'description'}, 
