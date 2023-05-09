@@ -18,16 +18,27 @@
     font-size: 20px;
 }
 
-
-
-.ItemDetailControls{
-    background-color: #45C4B0;
-    border-left: 1px solid black ;
-    width: 420px;
+.ButtonLinksContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.DetailControlsBody{
-    display: flex;
-    height: 100%;
-    flex-direction: column-reverse;
+.ButtonLink{
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: #13678A;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    max-width: 150px;
+    text-align: center;
+}
+
+.ButtonLink:hover{
+    color: #002e42; 
 }
