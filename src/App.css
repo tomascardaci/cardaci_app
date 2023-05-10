@@ -1,6 +1,14 @@
 .App{
-    background-color: #13678A;
+    background-color: #DAFDBA;
     min-height: 100vh;
+}
+
+.AppBody{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
 }
 
 

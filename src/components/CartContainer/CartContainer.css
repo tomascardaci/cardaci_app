@@ -1,0 +1,65 @@
+.CartContainerBody{
+    display: flex;
+    min-height: 420px;
+
+}
+
+.CartLiContainer{
+    background-color: white;
+    padding: 10px;
+}
+
+.CartDetailBody{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 25px;
+    width: 320px;
+    background-color: #45C4B0;
+}
+
+.CartDetailPrice{
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 3px;
+    color: white;
+
+}
+
+.CartDetailButton{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background-color: #13678A;
+    color: white;
+    padding: 6px;
+    width: 50%;
+    height: 50px;
+    text-align: center;
+}
+
+.CartDetailOptions{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.CartDetailContainer{
+    background-color: #45C4B0;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.HomeButton{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: #13678A;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+}

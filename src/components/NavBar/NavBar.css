@@ -36,3 +36,17 @@
 .NavBarLink:hover{
     color: #45C4B0; 
 }
+
+.CartWidgetContainer{
+    display: flex;
+    text-decoration: none;
+}
+
+.CartWidgetCount{
+    font-family: Roboto;
+    color: white;
+    font-size: 20px;
+    margin-left: 8px;
+    font-weight: bold;
+
+}

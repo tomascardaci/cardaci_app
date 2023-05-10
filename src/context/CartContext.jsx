@@ -13,8 +13,6 @@ export const CartContextProvider = ({children}) => {
 
     const [cartList, setCartList] = useState([])
 
-
-
     const addToCart = (newProduct) =>{
 
         const iProduct = cartList.findIndex(prod => prod.id === newProduct.id)
@@ -41,15 +39,9 @@ export const CartContextProvider = ({children}) => {
 
 
     const deleteProduct = (pid) =>{
-        
-        const iProduct = cartList.findIndex(product => product.id === pid)
-    
-        if (cartList[iProduct].quantity > 1){
-            cartList[iProduct].quantity = cartList[iProduct].quantity - 1
-            setCartList([...cartList])
-        }else {
-            setCartList(cartList.filter(product => product.id !== pid))
-        }
+
+        setCartList(cartList.filter(product => product.id !== pid))  
+           
     }
     
 
@@ -58,9 +50,6 @@ export const CartContextProvider = ({children}) => {
         setCartList([])
     }
     
-
-
-
 
 
     return(

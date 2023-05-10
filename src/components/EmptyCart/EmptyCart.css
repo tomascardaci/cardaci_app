@@ -1,0 +1,24 @@
+.HomeButton{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: #13678A;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+}
+
+.EmptyCart{
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    font-family: Roboto;
+    letter-spacing: 1px;
+}
+
+.EmptyCartTitle{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}

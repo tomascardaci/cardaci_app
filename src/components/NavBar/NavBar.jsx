@@ -9,7 +9,10 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
 import './NavBar.css'
+import { useCartContext } from '../../context/CartContext';
 const NavBar = () => {
+
+  const {totalQuantity} = useCartContext()
 
   useEffect(() => {
     WebFont.load({
@@ -40,7 +43,10 @@ const NavBar = () => {
                         </div>
                         
 
-                        <Link to='/cart'><CartWidget/></Link>
+                        <Link to='/cart' className='CartWidgetContainer'>
+                          <CartWidget/>
+                          <p className='CartWidgetCount'>{totalQuantity() >0 && totalQuantity()}</p>
+                        </Link>
                         
                     </Nav>
 

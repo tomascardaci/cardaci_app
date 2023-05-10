@@ -1,0 +1,18 @@
+.CartLi{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    justify-content: space-around;
+    width: 550px;
+}
+
+.CartLiImg{
+    max-width: 80px;
+}
+
+.CartLiText{
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 14px;
+}
